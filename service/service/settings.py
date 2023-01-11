@@ -131,3 +131,6 @@ LOGGING = {
     "handlers": {"console": {"class": "logging.StreamHandler"}},
     "loggers": {"django.db.backends": {"handlers": ["console"], "level": "DEBUG"}},
 }
+
+
+CELERY_BROKER_URL = "redis://redis:6379/0"
